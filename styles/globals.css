@@ -1,0 +1,46 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.search-input {
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10;
+  min-width: 350px;
+  border: 1px #CCCCCC solid;
+}
+
+.category-btn:hover {
+  background-color: #F68B1F !important;
+  color: white !important;
+}
+
+.category-btn:hover span{
+  color: white !important;
+}
+
+.category-btn{
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor:pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+
+  padding: 7px 15px;
+  margin: 5px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 900px) {
+  .category-btn{
+    margin: 10px;
+  }
+}
