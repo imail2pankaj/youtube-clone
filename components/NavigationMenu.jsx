@@ -5,7 +5,7 @@ import { AccountCircleOutlinedIcon, NotificationsOutlinedIcon, VideoCallOutlined
 
 const NavigationMenu = () => {
   return (
-    <Stack direction='row' spacing={2}>
+    <Stack direction='row'>
       <IconButton variant="text"><VideoCallOutlinedIcon /></IconButton>
       <IconButton variant="text"><NotificationsOutlinedIcon /></IconButton>
       <IconButton variant="text"><AccountCircleOutlinedIcon /></IconButton>

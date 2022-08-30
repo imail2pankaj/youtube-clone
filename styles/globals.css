@@ -6,11 +6,9 @@ body {
 
 .search-input {
   outline: none;
-  padding: 8px;
   font-size: 16px;
   border-radius: 10;
   min-width: 350px;
-  border: 1px #CCCCCC solid;
 }
 
 .category-btn:hover {
@@ -34,13 +32,6 @@ body {
   border: none;
 
   padding: 7px 15px;
-  margin: 5px 0px;
   border-radius: 20px;
   transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 900px) {
-  .category-btn{
-    margin: 10px;
-  }
 }

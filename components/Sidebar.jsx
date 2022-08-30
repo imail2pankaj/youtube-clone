@@ -5,17 +5,18 @@ import { categories } from '../utils/constants'
 const Sidebar = () => {
   return (
     <Stack
-      direction="row"
+    direction="row"
       sx={{
         overflowY: "auto",
-        height: { sx: "auto", md: "95%" },
-        flexDirection: { md: "column" },
+        flexDirection: { sm: "column" },
+        width: { xs: "100%", sm: "120px" },
+        minWidth: { sm: "120px" },
       }}
     >
       {categories.map(item => (
-        <button className="category-btn">
+        <button key={item.name} className="category-btn">
           <span>{item.icon}</span>
-          <span>{item.name}</span>
+          <Box sx={{ml:"10px"}}>{item.name}</Box>
         </button>
       ))}
     </Stack>
