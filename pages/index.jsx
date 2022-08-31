@@ -7,7 +7,7 @@ export default function Home() {
   const [feeds, setFeeds] = useState([]);
 
   useEffect(() => {
-    getData(`search?order=date`).then(resp => setFeeds(resp));
+    getData(`search?part=snippet,id&maxResults=50&order=date`).then(resp => setFeeds(resp));
   }, [])
 
   return (

@@ -16,3 +16,4 @@ export { default as GraphicEqIcon } from '@mui/icons-material/GraphicEq';
 export { default as TheaterComedyIcon } from '@mui/icons-material/TheaterComedy';
 export { default as FitnessCenterIcon } from '@mui/icons-material/FitnessCenter';
 export { default as DeveloperModeIcon } from '@mui/icons-material/DeveloperMode';
+export { default as CheckCircleOutlineIcon } from '@mui/icons-material/CheckCircleOutline';
