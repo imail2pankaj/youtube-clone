@@ -3,9 +3,10 @@ import Link from 'next/link'
 import React from 'react'
 import { CheckCircleOutlineIcon } from '../utils/icons'
 
+
 const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
   return (
-    <Card sx={{ width: { xs: '100%', sm: '308px', md: "287px", }, boxShadow: "none", borderRadius: 0 }}>
+    <Card sx={{ width: { xs: '100%', sm: '308px', md: "270px", marginBottom: "20px" }, boxShadow: "none", borderRadius: 0 }}>
       <Link href={`video/${videoId}`}>
         <CardMedia image={snippet?.thumbnails?.high?.url} alt={snippet?.title}
           sx={{ width: { xs: '100%', sm: '308px' }, height: 170, cursor: "pointer" }}
