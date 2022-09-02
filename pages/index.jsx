@@ -10,7 +10,7 @@ export default function Home() {
   const {category} = useContext(LayoutContext)
 
   useEffect(() => {
-    getData(`search?part=snippet,id&maxResults=50&order=date&q=${category}`).then(resp => setFeeds(resp));
+    getData(`search?part=snippet,id&regionCode=IN&maxResults=50&order=date&q=${category}`).then(resp => setFeeds(resp));
   }, [category])
 
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <Box sx={{ width: "100%" }}>
         <Stack direction={"row"} flexWrap="wrap" justifyContent="start" alignItems="start" gap={2}>
           {feeds && feeds.map(item => (
-            <VideoCard video={item} key={item?.id?.videoId} />
+            <VideoCard video={item} key={item.id.videoId} />
           ))}
         </Stack>
       </Box>

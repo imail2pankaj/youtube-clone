@@ -17,3 +17,12 @@ export { default as TheaterComedyIcon } from '@mui/icons-material/TheaterComedy'
 export { default as FitnessCenterIcon } from '@mui/icons-material/FitnessCenter';
 export { default as DeveloperModeIcon } from '@mui/icons-material/DeveloperMode';
 export { default as CheckCircleOutlineIcon } from '@mui/icons-material/CheckCircleOutline';
+
+export { default as ThumbUpOutlinedIcon } from '@mui/icons-material/ThumbUpOutlined';
+export { default as ThumbDownOutlinedIcon } from '@mui/icons-material/ThumbDownOutlined';
+export { default as ReplyOutlinedIcon } from '@mui/icons-material/ReplyOutlined';
+export { default as FavoriteBorderOutlinedIcon } from '@mui/icons-material/FavoriteBorderOutlined';
+export { default as ContentCutOutlinedIcon } from '@mui/icons-material/ContentCutOutlined';
+export { default as PlaylistAddOutlinedIcon } from '@mui/icons-material/PlaylistAddOutlined';
+
+

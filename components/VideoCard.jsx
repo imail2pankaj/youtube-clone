@@ -7,13 +7,13 @@ import { CheckCircleOutlineIcon } from '../utils/icons'
 const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
   return (
     <Card sx={{ width: { xs: '100%', sm: '308px', md: "270px", marginBottom: "20px" }, boxShadow: "none", borderRadius: 0 }}>
-      <Link href={`video/${videoId}`}>
+      <Link href={`/video/${videoId}`}>
         <CardMedia image={snippet?.thumbnails?.high?.url} alt={snippet?.title}
           sx={{ width: { xs: '100%', sm: '308px' }, height: 170, cursor: "pointer" }}
         />
       </Link>
       <CardContent sx={{ backgroundColor: "#EFEFEF", height: '80px' }}>
-        <Link href={`video/${videoId}`}>
+        <Link href={`/video/${videoId}`}>
           <Typography
             variant="subtitle1"
             fontWeight="bold"
@@ -22,7 +22,7 @@ const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
             {snippet?.title.slice(0, 40)}...
           </Typography>
         </Link>
-        <Link href={`channel/${snippet?.channelId}`}>
+        <Link href={`/channel/${snippet?.channelId}`}>
           <Typography variant="subtitle2" sx={{ cursor: "pointer" }}>
             {snippet?.channelTitle} {' '}
             <CheckCircleOutlineIcon sx={{ fontSize: "12px" }} />

@@ -12,7 +12,7 @@ const LogoBar = () => {
     <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
       <MenuIcon sx={{ marginRight: "10px" }} />
       <Link href="/">
-        <Image src={logo} alt="Logo" width={110} height="48" />
+        <Image src={logo} alt="Logo" width={40} height="40" />
       </Link>
     </Box>
   )
